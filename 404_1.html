@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Page Not Found</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== BODY ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #011030, #04163c);
+    overflow: hidden;
+    color: #ffffff;
+}
+
+/* ===== Floating Animated Background Shapes ===== */
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #0c7c8c 0%, transparent 70%);
+    animation: float 8s ease-in-out infinite;
+    opacity: 0.4;
+}
+
+body::before {
+    top: -150px;
+    left: -150px;
+}
+
+body::after {
+    bottom: -150px;
+    right: -150px;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(40px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ===== 404 Container ===== */
+.error-container {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== 404 Number ===== */
+.error-code {
+    font-size: 150px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #0c7c8c, #167a96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* ===== Text ===== */
+.error-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.error-text {
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 30px;
+}
+
+/* ===== Button ===== */
+.home-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #0c7c8c, #32a9ca);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0, 195, 255, 0.4);
+}
+
+.home-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 195, 255, 0.7);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 90px;
+    }
+
+    .error-title {
+        font-size: 22px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="error-container">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">Oops! Page Not Found</h2>
+    <p class="error-text">
+        The page you are looking for might have been removed <br>
+        or is temporarily unavailable.
+    </p>
+    <a href="index2.html" class="home-btn">Go Back Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Stackly Medical Device</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/custom-animate.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />  
+    <link rel="stylesheet" href="assets/css/jarallax.css" />
+    <link rel="stylesheet" href="assets/css/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/odometer.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/timePicker.css" />
+
+
+    <link rel="stylesheet" href="assets/css/module-css/slider.css" />
+    <link rel="stylesheet" href="assets/css/module-css/banner.css" />
+    <link rel="stylesheet" href="assets/css/module-css/footer.css" />
+    <link rel="stylesheet" href="assets/css/module-css/feature.css" />
+    <link rel="stylesheet" href="assets/css/module-css/about.css" />
+    <link rel="stylesheet" href="assets/css/module-css/brand.css" />
+    <link rel="stylesheet" href="assets/css/module-css/service.css" />
+    <link rel="stylesheet" href="assets/css/module-css/project.css" />
+    <link rel="stylesheet" href="assets/css/module-css/team.css" />
+    <link rel="stylesheet" href="assets/css/module-css/faq.css" />
+    <link rel="stylesheet" href="assets/css/module-css/testimonial.css" />
+    <link rel="stylesheet" href="assets/css/module-css/blog.css" />
+    <link rel="stylesheet" href="assets/css/module-css/contact.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/dark.css" />
+
+    <style>
+ /* ==============================
+   CONTACT HEADER (Better Contrast)
+================================= */
+.contact-header-dark {
+    background: linear-gradient(135deg, #071c3a, #0c244d);
+    padding: 120px 0 80px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-header-dark .contact-tagline {
+    color: var(--careon-base);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.contact-subtitle {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+/* ==============================
+   CONTACT MAIN SECTION
+================================= */
+.contact-dark-section {
+    background: #0b1f3a; /* Slightly lighter than header */
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+/* Contact Info Box */
+.contact-info-box {
+    background: #102a4c;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.contact-info-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.contact-info-item h5 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.contact-info-item p {
+    color: #cbd5e1;
+    margin: 0;
+}
+
+.contact-info-item i {
+    font-size: 20px;
+    color: var(--careon-base);
+    background: #0c84ff26;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.contact-info-item:hover {
+    transform: translateX(6px);
+}
+
+/* ==============================
+   FORM SECTION
+================================= */
+.contact-form-box {
+    background: #102a4c;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+/* Inputs */
+.contact-form-box input,
+.contact-form-box textarea {
+    width: 100%;
+    background: #071c3a;
+    border: 1px solid #1f3a6d;
+    padding: 14px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.contact-form-box input::placeholder,
+.contact-form-box textarea::placeholder {
+    color: #94a3b8;
+}
+
+.contact-form-box input:focus,
+.contact-form-box textarea:focus {
+    border-color: var(--careon-base);
+    box-shadow: 0 0 10px rgba(12,132,255,0.4);
+    outline: none;
+}
+
+/* Button */
+.dark-btn {
+    background: linear-gradient(45deg, var(--careon-base), #468fa3);
+    border: none;
+    padding: 14px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.dark-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(12,132,255,0.4);
+}
+
+/* ==============================
+   MAP
+================================= */
+.contact-map-dark iframe {
+    width: 100%;
+    height: 420px;
+    border: 0;
+    filter: grayscale(30%) brightness(85%);
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-dark-section {
+        padding: 60px 0;
+    }
+
+    .contact-info-box,
+    .contact-form-box {
+        margin-bottom: 30px;
+    }
+
+}
+    </style>
+</head>
+
+<body class="custom-cursor">
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+    <!-- /.preloader -->
+
+    <div class="page-wrapper">
+        <header class="main-header">
+            <div class="main-header__wrapper">
+                <nav class="main-menu">
+                    <div class="main-menu__wrapper">
+                        <div class="container">
+                            <div class="main-menu__wrapper-inner">
+                                <div class="main-menu__left">
+                                    <div class="main-menu__logo">
+                                        <a href="index2.html"><img src="assets/images/home2/resources/logo.webp" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="main-menu__main-menu-box">
+                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                    <ul class="main-menu__list">
+                                        <li class="dropdown">
+                                            <a href="index2.html">Home </a>
+                                            <ul>
+                                                <li><a href="index.html">Home One</a></li>
+                                                <li><a href="index2.html">Home Two</a></li>
+                                         </ul>
+                                        </li>
+                                        <li>
+                                            <a href="about2.html">About Us</a>
+                                        </li>
+
+                                        <li><a href="services.html">Services</a></li>
+
+                                                <li><a href="products2.html">Products</a></li>
+                                                <li><a href="faq.html">FAQs</a></li>
+                                        <li>
+                                            <a href="contact2.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-menu__right">
+                                    <div class="main-menu__thm-btn">
+                                        <a href="login2.html" class="thm-btn">Appoinment Now <span
+                                                class="fa-solid fa-plus"></span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+
+
+<!-- Page Header Start -->
+<section class="page-header">
+    <div class="page-header__bg"></div>
+    <div class="container">
+        <div class="page-header__inner text-center">
+            <h2 class="page-header__title">Contact Us</h2>
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a href="index2.html">Home</a></li>
+                <li><span>/</span></li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Page Header End -->
+
+<section class="contact-header-dark">
+  <div class="section-title text-center sec-title-animation animation-style1">
+    
+    <h6 class="section-title__tagline">
+        <i class="fa-solid fa-laptop-medical"></i>
+        Contact Us
+    </h6>
+
+    <h3 class="section-title__title title-animation">
+        Contact Our Medical <br> Technology Experts
+    </h3>
+        <p class="contact-subtitle">
+            We're here to support your healthcare facility with advanced equipment solutions.
+        </p>
+    </div>
+</section>
+
+
+<section class="contact-dark-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Contact Details -->
+            <div class="col-lg-5">
+                <div class="contact-info-box">
+
+                    <div class="contact-info-item wow fadeInUp" data-wow-delay="100ms">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h5>Our Location</h5>
+                            <p>Salem, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item wow fadeInUp" data-wow-delay="200ms">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h5>Phone Number</h5>
+                            <p>+91 1234567890</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item wow fadeInUp" data-wow-delay="300ms">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h5>Email Address</h5>
+                            <p>support@stackly.com</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+                <div class="contact-form-box wow fadeInRight" data-wow-delay="500ms">
+           <form id="contactForm">
+
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" id="name" placeholder="Your Name">
+        </div>
+        <div class="col-md-6">
+            <input type="email" id="email" placeholder="Your Email">
+        </div>
+    </div>
+
+    <input type="text" id="subject" placeholder="Subject">
+
+    <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+    <!-- Error Message (Above Button) -->
+    <div id="formError" style="color:#ff4d4d; margin:10px 0; font-size:14px;"></div>
+
+    <button type="submit" class="dark-btn">
+        Send Message <i class="fa-solid fa-paper-plane"></i>
+    </button>
+
+</form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="contact-map-dark">
+    <iframe 
+        src="https://www.google.com/maps?q=Salem,Tamilnadu,India&output=embed"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+</section>
+
+   
+   <!--Site Footer Start-->
+         <footer class="site-footer">
+            <div class="site-footer__bg-shape"
+                style="background-image: url(assets/images/home2/shapes/site-footer-bg-shape.webp);"></div>
+            <div class="site-footer__newsletter">
+                <div class="container">
+                    <div class="site-footer__newsletter-inner">
+                        <div class="site-footer__newsletter-inner-title-box">
+                            <div class="footer-widget__logo">
+                                <a href="index2.html"><img src="assets/images/home2/resources/logo.webp" alt=""></a>
+                            </div>
+                            <h2 class="site-footer__newsletter-title">Subscribe To Our <br>Newsletter</h2>
+                        </div>
+                        <div class="site-footer__newsletter-form">
+                            <form class="site-footer__newsletter-form" id="newsletterForm">
+    <div class="site-footer__newsletter-input">
+        <input type="email" id="newsletterEmail" placeholder="Your email...">
+    </div>
+
+    <!-- Error Message (Inside Layout) -->
+    <div id="newsletterError" style="color:#ff4d4d; margin-top:8px; font-size:14px;"></div>
+
+    <button type="submit" class="thm-btn">
+        Subscribe Now 
+    </button>
+</form>
+
+<script>
+document.getElementById("newsletterForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const emailInput = document.getElementById("newsletterEmail");
+    const errorDiv = document.getElementById("newsletterError");
+    const email = emailInput.value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    errorDiv.innerText = "";
+    emailInput.style.border = "";
+
+    if(!email){
+        errorDiv.innerText = "Email address is required.";
+        emailInput.style.border = "2px solid #ff4d4d";
+        return;
+    }
+
+    if(!emailPattern.test(email)){
+        errorDiv.innerText = "Please enter a valid email address.";
+        emailInput.style.border = "2px solid #ff4d4d";
+        return;
+    }
+
+        window.location.href = "404.html";
+
+
+});
+</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__top">
+                <div class="container">
+                    <div class="site-footer__top-inner">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                <div class="footer-widget__contact-info">
+                                    <h4 class="footer-widget__title">Contact</h4>
+                                    <ul class="footer-widget__contact-list list-unstyled">
+                                        <li>
+                                            <div class="footer-widget__contact-icon">
+                                                <span class="fa-solid fa-location-dot"></span>
+                                            </div>
+                                            <div class="footer-widget__contact-content">
+                                                <span>Address</span>
+                                                <p class="footer-widget__contact-text">Salem, Tamilnadu, India.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="footer-widget__contact-icon">
+                                                <span class="fa-solid fa-phone"></span>
+                                            </div>
+                                            <div class="footer-widget__contact-content">
+                                                <span>Phone Number</span>
+                                                <p class="footer-widget__contact-text"><a>+91 1234567890</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="footer-widget__contact-icon">
+                                                <span class="fa-solid fa-envelope"></span>
+                                            </div>
+                                            <div class="footer-widget__contact-content">
+                                                <span>Email</span>
+                                                <p class="footer-widget__contact-text"><a
+                                                        >support@stackly.com</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                <div class="footer-widget__services">
+                                    <h4 class="footer-widget__title">Medical Devices</h4>
+<ul class="footer-widget__services-link-list list-unstyled">
+    <li>
+        <a href="products2.html">Diagnostic Equipment</a>
+    </li>
+    <li>
+        <a href="products2.html">Patient Monitoring Systems</a>
+    </li>
+    <li>
+        <a href="products2.html">Surgical Instruments</a>
+    </li>
+    <li>
+        <a href="products2.html">Medical Imaging Systems</a>
+    </li>
+    <li>
+        <a href="products2.html">Rehabilitation Devices</a>
+    </li>
+</ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="footer-widget__social-media">
+                                    <div class="footer-widget__title-box">
+     <h3 class="footer-widget__title">Social Media</h3>
+</div>
+
+<ul class="footer-widget__services-link-list list-unstyled">
+    <li>
+        <a href="404_1.html">
+            <i class="fa-brands fa-facebook-f"></i> Facebook
+        </a>
+    </li>
+    <li>
+        <a href="404_1.html">
+            <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+    </li>
+    <li>
+        <a href="404_1.html">
+            <i class="fa-brands fa-twitter"></i> Twitter
+        </a>
+    </li>
+    <li>
+        <a href="404_1.html">
+            <i class="fa-brands fa-pinterest"></i> Pinterest
+        </a>
+    </li>
+    <li>
+        <a href="404_1.html">
+            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+        </a>
+    </li>
+</ul>
+                           </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                <div class="footer-widget__page-link">
+                                    <h4 class="footer-widget__title">Page</h4>
+                                    <ul class="footer-widget__services-link-list list-unstyled">
+                                        <li>
+                                            <a href="about2.html">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="faq.html">FAQ's</a>
+                                        </li>
+                                        <li>
+                                            <a href="products2.html">Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact2.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="site-footer__bottom-inner">
+                                <div class="site-footer__copyright">
+                                    <p class="site-footer__copyright-text">Copyright ©2025 <a>Stackly</a>.
+                                        All rights reserved.</p>
+                                </div>
+                                <div class="site-footer__bottom-menu-box">
+                                    <ul class="list-unstyled site-footer__bottom-menu">
+                                        <li><a href="404_1.html">Terms & Condition</a></li>
+                                        <li><a href="404_1.html">Privacy Policy</a></li>
+                                        <li><a href="contact2.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer End-->
+
+
+    </div><!-- /.page-wrapper -->
+
+
+<div class="mobile-nav__wrapper">
+    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+
+    <div class="mobile-nav__content">
+        <span class="mobile-nav__close mobile-nav__toggler">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+
+        <!-- Logo -->
+        <div class="logo-box">
+            <a href="index2.html" aria-label="logo image">
+                <img src="assets/images/home2/resources/logo.webp" width="135" alt="" />
+            </a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="mobile-nav__container"></div>
+
+        <!-- ✅ Appointment Button (Same as Desktop) -->
+        <div class="mobile-appointment-btn">
+            <a href="login2.html" class="thm-btn">
+                Appointment Now <span class="fa-solid fa-plus"></span>
+            </a>
+        </div>
+
+        <!-- Contact Info -->
+        <ul class="mobile-nav__contact list-unstyled">
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a>needhelp@stackly.com</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <a>+91 1234567890</a>
+            </li>
+        </ul>
+
+        <!-- Social -->
+        <div class="mobile-nav__top">
+            <div class="mobile-nav__social">
+                <a href="404_1.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="404_1.html"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="404_1.html"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="404_1.html"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+        <span class="scroll-to-top__text"> Go Back Top</span>
+    </a>
+
+    <script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const name    = document.getElementById("name").value.trim();
+    const email   = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const errorDiv = document.getElementById("formError");
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    errorDiv.innerText = "";
+
+    if(!name){
+        errorDiv.innerText = "Your Name is required.";
+        return;
+    }
+
+    if(!emailPattern.test(email)){
+        errorDiv.innerText = "Please enter a valid email address.";
+        return;
+    }
+
+    if(!subject){
+        errorDiv.innerText = "Subject is required.";
+        return;
+    }
+
+    if(!message){
+        errorDiv.innerText = "Message cannot be empty.";
+        return;
+    }
+
+        window.location.href = "404_1.html";
+});
+</script>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.circle-progress.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/wNumb.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery-sidebar-content.js"></script>
+    <script src="assets/js/gsap/gsap.js"></script>
+    <script src="assets/js/gsap/ScrollTrigger.js"></script>
+    <script src="assets/js/gsap/SplitText.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/timePicker.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+

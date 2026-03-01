@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Stackly Medical Devices</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/custom-animate.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/jarallax.css" />
+    <link rel="stylesheet" href="assets/css/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/odometer.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/timePicker.css" />
+    <link rel="stylesheet" href="assets/css/module-css/slider.css" />
+    <link rel="stylesheet" href="assets/css/module-css/banner.css" />
+    <link rel="stylesheet" href="assets/css/module-css/footer.css" />
+    <link rel="stylesheet" href="assets/css/module-css/feature.css" />
+    <link rel="stylesheet" href="assets/css/module-css/about.css" />
+    <link rel="stylesheet" href="assets/css/module-css/brand.css" />
+    <link rel="stylesheet" href="assets/css/module-css/service.css" />
+    <link rel="stylesheet" href="assets/css/module-css/project.css" />
+    <link rel="stylesheet" href="assets/css/module-css/team.css" />
+    <link rel="stylesheet" href="assets/css/module-css/faq.css" />
+    <link rel="stylesheet" href="assets/css/module-css/testimonial.css" />
+    <link rel="stylesheet" href="assets/css/module-css/blog.css" />
+    <link rel="stylesheet" href="assets/css/module-css/contact.css" />
+    <link rel="stylesheet" href="assets/css/module-css/sliding-text.css" />
+    <link rel="stylesheet" href="assets/css/module-css/newsletter.css" />
+    <link rel="stylesheet" href="assets/css/module-css/why-choose.css" />
+    <link rel="stylesheet" href="assets/css/module-css/appiontment.css" />
+    <link rel="stylesheet" href="assets/css/module-css/counter.css" />
+    <link rel="stylesheet" href="assets/css/module-css/before-and-after.css" />
+    <link rel="stylesheet" href="assets/css/module-css/video.css" />
+    <link rel="stylesheet" href="assets/css/module-css/pricing.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <style>
+  /* TOP BAR */
+.filter-top-bar {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.search-input {
+    max-width: 400px;
+}
+
+.sort-select {
+    max-width: 200px;
+}
+
+/* SIDEBAR */
+.product-sidebar {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-list li:hover,
+.category-list li.active {
+    background: #006D77;
+    color: #fff;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    transition: 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-title {
+    font-weight: 600;
+    margin-top: 12px;
+    color: #031B4E;
+}
+
+.product-price {
+    color: #006D77;
+    font-weight: 700;
+}
+
+/* BUTTONS */
+.btn-cart {
+    background: linear-gradient(135deg,#006D77,#0096A6);
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 14px;
+    transition: 0.3s;
+}
+
+.btn-cart:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.btn-buy {
+    background: #198754;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 14px;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Equal height column */
+#productContainer .col-md-4 {
+    display: flex;
+}
+
+/* Card full height */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    min-height: 420px; /* adjust if needed */
+}
+.product-img {
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img img {
+    max-height: 100%;
+    width: auto;
+}
+
+.product-title {
+    min-height: 48px; /* keeps titles equal */
+}
+/* Modern Sort Dropdown */
+.sort-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: #ffffff;
+    border: 2px solid #E3EEF2;
+    border-radius: 12px;
+    padding: 10px 45px 10px 15px;
+    font-weight: 500;
+    color: #031B4E;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Focus State */
+.sort-select:focus {
+    border-color: #006D77;
+    box-shadow: 0 0 0 3px rgba(0,109,119,0.15);
+    outline: none;
+}
+
+/* Hover */
+.sort-select:hover {
+    border-color: #006D77;
+}
+
+/* Custom Arrow */
+.sort-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.sort-wrapper::after {
+    content: "▼";
+    font-size: 12px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #006D77;
+    pointer-events: none;
+}
+
+.product-offer-section {
+    padding: 100px 0;
+    background: #F4F9FB;
+}
+
+.offer-box {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    background: url('assets/images/home1/product/ad.webp') center right/cover no-repeat;
+}
+
+/* Soft Left Gradient Overlay */
+.offer-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0, 109, 119, 0.85) 0%,
+        rgba(0, 109, 119, 0.65) 25%,
+        rgba(0, 109, 119, 0.35) 45%,
+        rgba(0, 109, 119, 0.1) 65%,
+        rgba(0, 109, 119, 0) 80%
+    );
+    z-index: 1;
+}
+
+/* Content above overlay */
+.offer-content {
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    color: #ffffff;
+}
+
+/* Badge */
+.offer-badge {
+    display: inline-block;
+    background: #FFD166;
+    color: #031B4E;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Title */
+.offer-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #E3EEF2;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.offer-description {
+    font-size: 18px;
+    margin-bottom: 25px;
+    opacity: 0.95;
+}
+
+/* Price */
+.offer-price {
+    margin-bottom: 30px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 20px;
+    margin-right: 15px;
+    opacity: 0.7;
+}
+
+.new-price {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFD166;
+}
+
+/* Button */
+.offer-btn {
+    background: #ffffff;
+    color: #006D77;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.offer-btn:hover {
+    background: #031B4E;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+/* ===================================
+   DARK MODE
+=================================== */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* Top Bar */
+body.dark-mode .filter-top-bar {
+    background: #1e293b;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Sidebar */
+body.dark-mode .product-sidebar {
+    background: #1e293b;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .category-list li {
+    color: #cbd5e1;
+}
+
+body.dark-mode .category-list li:hover,
+body.dark-mode .category-list li.active {
+    background: #006D77;
+    color: #fff;
+}
+
+/* Product Card */
+body.dark-mode .product-card {
+    background: #1e293b;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .product-title {
+    color: #f1f5f9;
+}
+
+body.dark-mode .product-price {
+    color: #4dd0e1;
+}
+
+/* Inputs */
+body.dark-mode input,
+body.dark-mode select {
+    background: #0f172a;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+}
+
+body.dark-mode input::placeholder {
+    color: #94a3b8;
+}
+
+/* Sort Dropdown */
+body.dark-mode .sort-select {
+    background: #0f172a;
+    border: 2px solid #334155;
+    color: #e2e8f0;
+}
+
+body.dark-mode .sort-select:hover,
+body.dark-mode .sort-select:focus {
+    border-color: #006D77;
+    box-shadow: 0 0 0 3px rgba(0,109,119,0.25);
+}
+
+/* Offer Section */
+body.dark-mode .product-offer-section {
+    background: #0f172a;
+}
+
+body.dark-mode .offer-box::before {
+    background: linear-gradient(
+        to right,
+        rgba(0, 109, 119, 0.9) 0%,
+        rgba(0, 109, 119, 0.7) 25%,
+        rgba(0, 109, 119, 0.4) 50%,
+        rgba(0, 109, 119, 0.2) 70%,
+        rgba(0, 109, 119, 0) 90%
+    );
+}
+
+body.dark-mode .offer-title {
+    color: #ffffff;
+}
+
+body.dark-mode .offer-description {
+    color: #e2e8f0;
+}
+
+body.dark-mode .offer-btn {
+    background: #006D77;
+    color: #fff;
+}
+
+body.dark-mode .offer-btn:hover {
+    background: #0096A6;
+}
+
+/* Buttons */
+body.dark-mode .btn-cart {
+    background: linear-gradient(135deg,#006D77,#0096A6);
+}
+
+body.dark-mode .btn-buy {
+    background: #198754;
+}
+
+/* Shadows softer in dark */
+body.dark-mode .product-card:hover {
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+/* ===================================
+   MOBILE RESPONSIVE (MAX 991px)
+=================================== */
+@media (max-width: 991px) {
+
+    /* Top Filter Bar */
+    .filter-top-bar {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .search-input {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sort-wrapper,
+    .sort-select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Sidebar becomes full width */
+    .product-sidebar {
+        margin-bottom: 25px;
+    }
+
+    /* Stack product cards properly */
+    #productContainer .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .product-card {
+        min-height: auto;
+    }
+
+    /* Product Image fix */
+    .product-img {
+        height: 200px;
+    }
+
+    /* Buttons full width */
+    .btn-cart,
+    .btn-buy {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Offer Section */
+    .offer-box {
+        padding: 40px 25px;
+        min-height: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .offer-title {
+        font-size: 28px;
+    }
+
+    .offer-description {
+        font-size: 15px;
+    }
+
+    .new-price {
+        font-size: 26px;
+    }
+
+    .offer-btn {
+        width: 100%;
+    }
+
+}
+
+/* ===================================
+   SMALL MOBILE (MAX 576px)
+=================================== */
+@media (max-width: 576px) {
+
+    .filter-top-bar {
+        padding: 12px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-title {
+        font-size: 16px;
+        min-height: auto;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+
+    .offer-box {
+        padding: 30px 20px;
+    }
+
+    .offer-title {
+        font-size: 22px;
+    }
+
+    .offer-description {
+        font-size: 14px;
+    }
+
+}
+    </style>
+</head>
+
+<body class="custom-cursor">
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <!-- /.preloader -->
+
+    <div class="page-wrapper">
+        <header class="main-header-five">
+            <div class="main-header-five__wrapper">
+                <nav class="main-menu main-menu-five">
+                    <div class="main-menu-five__wrapper">
+                        <div class="container">
+                            <div class="main-menu-five__wrapper-inner">
+                                <div class="main-menu-five__left">
+                                    <div class="main-menu-five__logo">
+                                        <a href="index.html"><img src="assets/images/home1/resources/logo.webp" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="main-menu-five__main-menu-box">
+                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                    <ul class="main-menu__list">
+                                        <li class="dropdown">
+    <a href="index.html">Home</a>
+                                            <ul>
+                                                <li><a href="index.html">Home One</a></li>
+                                                <li><a href="index2.html">Home Two</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">Shop</a>
+                                            <ul>
+                                                <li><a href="products.html">Products</a></li>
+                                                <li><a href="product-details.html">Product Details</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                            </ul>
+                                        </li>
+                                         <li>
+                                            <a href="dashboard.html">Dashboard</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-menu-five__right">
+                                    <div class="main-menu-five__call">
+                                        <a href="cart.html" class="header-cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-badge">2</span>
+        </a>
+        <a href="login.html" class="header-action-btn">
+            <i class="fas fa-user"></i>
+            <span>Login</span>
+        </a>
+        <button id="themeToggle" class="header-dark-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="stricky-header stricked-menu main-menu main-menu-five">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+<!-- Inner Page Banner Start -->
+<section class="inner-banner-medical">
+    <div class="inner-banner-medical__bg"></div>
+
+    <div class="container">
+        <div class="inner-banner-medical__content text-center">
+            <h1 class="inner-banner-medical__title">Products</h1>
+
+            <div class="inner-banner-medical__breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">/</span>
+                <span>Products</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products-page py-5">
+<div class="container">
+
+    <!-- TOP FILTER BAR (FULL WIDTH) -->
+    <div class="filter-top-bar d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+
+        <input type="text" id="searchInput"
+               class="form-control search-input"
+               placeholder="Search Medical Devices..."
+               onkeyup="applyFilters()">
+
+        <select id="sortSelect"
+                class="form-select sort-select"
+                onchange="applyFilters()">
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+        </select>
+
+    </div>
+
+    <div class="row">
+
+        <!-- SIDEBAR -->
+        <div class="col-lg-3">
+            <div class="product-sidebar">
+
+                <h5>Categories</h5>
+                <ul class="category-list">
+                    <li class="active" onclick="setCategory('all')">All</li>
+                    <li onclick="setCategory('monitor')">Patient Monitors</li>
+                    <li onclick="setCategory('surgical')">Surgical Equipment</li>
+                    <li onclick="setCategory('lab')">Lab Devices</li>
+                </ul>
+
+                <hr>
+
+                <h6>Filter by Price</h6>
+                <input type="range" min="0" max="3000"
+                       id="priceRange"
+                       oninput="applyFilters()">
+                <p class="price-label">Up to $<span id="priceValue">3000</span></p>
+
+                <hr>
+
+                <h6>Filter by Rating</h6>
+                <select id="ratingFilter"
+                        class="form-select"
+                        onchange="applyFilters()">
+                    <option value="0">All Ratings</option>
+                    <option value="4">4★ & Above</option>
+                    <option value="3">3★ & Above</option>
+                </select>
+
+            </div>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div class="col-lg-9">
+            <div class="row" id="productContainer"></div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    let cartCount = 0;
+    let currentCategory = "all";
+
+    const products = [
+        {id:1,name:"Cardiac Monitor",price:1200,category:"monitor",rating:5,image:"assets/images/home1/product/cardiac.webp"},
+        {id:2,name:"ECG Machine",price:900,category:"monitor",rating:4,image:"assets/images/home1/product/ecg.webp"},
+        {id:3,name:"Vital Monitor",price:1500,category:"monitor",rating:3,image:"assets/images/home1/product/vital.webp"},
+
+        {id:4,name:"Surgical Light",price:1500,category:"surgical",rating:5,image:"assets/images/home1/product/light.webp"},
+        {id:5,name:"Anesthesia Machine",price:2500,category:"surgical",rating:4,image:"assets/images/home1/product/anesthesia.webp"},
+        {id:6,name:"Surgical Table",price:1800,category:"surgical",rating:3,image:"assets/images/home1/product/table.webp"},
+
+        {id:7,name:"Microscope",price:800,category:"lab",rating:5,image:"assets/images/home1/product/microscope.webp"},
+        {id:8,name:"Centrifuge",price:700,category:"lab",rating:4,image:"assets/images/home1/product/centrifuge.webp"},
+        {id:9,name:"Lab Analyzer",price:1300,category:"lab",rating:3,image:"assets/images/home1/product/analyzer.webp"},
+    ];
+
+    const container = document.getElementById("productContainer");
+    const searchInput = document.getElementById("searchInput");
+    const priceRange = document.getElementById("priceRange");
+    const ratingFilter = document.getElementById("ratingFilter");
+    const sortSelect = document.getElementById("sortSelect");
+    const priceValue = document.getElementById("priceValue");
+    const categoryItems = document.querySelectorAll(".category-list li");
+    const cartBadge = document.querySelector(".cart-badge");
+
+    /* =========================
+       DISPLAY PRODUCTS
+    ========================== */
+    function displayProducts(data) {
+        container.innerHTML = "";
+
+        if (data.length === 0) {
+            container.innerHTML = "<p>No products found.</p>";
+            return;
+        }
+
+        data.forEach(product => {
+
+            let stars = "";
+            for (let i = 1; i <= 5; i++) {
+                stars += i <= product.rating ? "★" : "☆";
+            }
+
+            container.innerHTML += `
+                <div class="col-md-4 mb-4">
+                    <div class="product-card modern-card">
+                        <div class="product-img">
+                            <img src="${product.image}" class="img-fluid">
+                        </div>
+
+                        <h6 class="product-title mt-3">${product.name}</h6>
+                        <p class="product-price">$${product.price}</p>
+                        <div class="rating text-warning mb-3">${stars}</div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm btn-cart" data-id="${product.id}">
+                                Add to Cart
+                            </button>
+                            <button class="btn btn-sm btn-buy" data-name="${product.name}">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    /* =========================
+       APPLY FILTERS
+    ========================== */
+    function applyFilters() {
+
+        let filtered = [...products];
+
+        // Category filter
+        if (currentCategory !== "all") {
+            filtered = filtered.filter(p => p.category === currentCategory);
+        }
+
+        // Search filter
+        const searchValue = searchInput.value.toLowerCase();
+        filtered = filtered.filter(p =>
+            p.name.toLowerCase().includes(searchValue)
+        );
+
+        // Price filter
+        const maxPrice = parseInt(priceRange.value);
+        priceValue.textContent = maxPrice;
+        filtered = filtered.filter(p => p.price <= maxPrice);
+
+        // Rating filter
+        const minRating = parseInt(ratingFilter.value);
+        filtered = filtered.filter(p => p.rating >= minRating);
+
+        // Sorting
+        if (sortSelect.value === "low") {
+            filtered.sort((a, b) => a.price - b.price);
+        }
+        if (sortSelect.value === "high") {
+            filtered.sort((a, b) => b.price - a.price);
+        }
+
+        displayProducts(filtered);
+    }
+
+    /* =========================
+       CATEGORY CLICK
+    ========================== */
+    categoryItems.forEach(item => {
+        item.addEventListener("click", function () {
+
+            categoryItems.forEach(li => li.classList.remove("active"));
+            this.classList.add("active");
+
+            currentCategory = this.getAttribute("data-category") || this.textContent.toLowerCase().includes("monitor") ? "monitor" :
+                              this.textContent.toLowerCase().includes("surgical") ? "surgical" :
+                              this.textContent.toLowerCase().includes("lab") ? "lab" : "all";
+
+            if (this.textContent === "All") {
+                currentCategory = "all";
+            }
+
+            applyFilters();
+        });
+    });
+
+document.addEventListener("click", function (e) {
+
+    if (e.target.classList.contains("btn-cart")) {
+
+        cartCount++;
+        if (cartBadge) cartBadge.textContent = cartCount;
+
+        // Redirect to cart page
+        window.location.href = "cart.html";
+    }
+
+    if (e.target.classList.contains("btn-buy")) {
+
+        // Redirect to checkout page
+        window.location.href = "checkout.html";
+    }
+
+});
+
+    /* =========================
+       EVENT LISTENERS
+    ========================== */
+    searchInput.addEventListener("keyup", applyFilters);
+    priceRange.addEventListener("input", applyFilters);
+    ratingFilter.addEventListener("change", applyFilters);
+    sortSelect.addEventListener("change", applyFilters);
+
+    /* INITIAL LOAD */
+    displayProducts(products);
+
+});
+
+</script>
+
+
+<section class="product-offer-section">
+    <div class="container">
+        <div class="offer-box">
+
+            <div class="offer-content">
+                <span class="offer-badge">Limited Time Offer</span>
+
+                <h2 class="offer-title">
+                    Advanced Cardiac Monitor
+                </h2>
+
+                <p class="offer-description">
+                    High-precision patient monitoring system designed for
+                    critical care and hospital environments.
+                </p>
+
+                <div class="offer-price">
+                    <span class="old-price">$1500</span>
+                    <span class="new-price">$999</span>
+                </div>
+
+                <button class="offer-btn" onclick="window.location.href='checkout.html'">
+    Buy Now
+</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+     <!--Site Footer Three Start-->
+        <footer class="site-footer-three">
+            <div class="site-footer-three__shape-1">
+                <img src="assets/images/home1/shapes/site-footer-three-shape-1.webp" alt="">
+            </div>
+            <div class="container">
+                <div class="site-footer-three__logo-and-social">
+                    <div class="footer-widget-three__logo">
+                        <a href="index.html"><img src="assets/images/home1/resources/logo.webp" alt=""></a>
+                    </div>
+                    <div class="site-footer-three__social">
+                        <a href="404.html"><span class="fab fa-facebook-f"></span></a>
+                        <a href="404.html"><span class="fab fa-twitter"></span></a>
+                        <a href="404.html"><span class="fab fa-instagram"></span></a>
+                        <a href="404.html"><span class="fab fa-pinterest-p"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer-three__top">
+                <div class="container">
+                    <div class="site-footer-three__top-inner">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                <div class="footer-widget-three__contact-info">
+                                    <h4 class="footer-widget-three__title">Contact</h4>
+                                    <ul class="footer-widget-three__contact-list list-unstyled">
+                                        <li>
+                                            <div class="footer-widget-three__contact-icon">
+                                                <span class="fas fa-envelope"></span>
+                                            </div>
+                                            <div class="footer-widget-three__contact-content">
+                                                <span>Email</span>
+                                                <p class="footer-widget-three__contact-text"><a
+                                                        >support@stackly.com</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="footer-widget-three__contact-icon">
+                                                <span class="fas fa-phone-alt"></span>
+                                            </div>
+                                            <div class="footer-widget-three__contact-content">
+                                                <span>Phone</span>
+                                                <p class="footer-widget-three__contact-text"><a
+                                                        >+91 1234567890</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="footer-widget-three__contact-icon">
+                                                <span class="fas fa-map-marker-alt"></span>
+                                            </div>
+                                            <div class="footer-widget-three__contact-content">
+                                                <span>Location</span>
+                                                <p class="footer-widget-three__contact-text">Salem, Tamilnadu, India</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                <div class="footer-widget-three__page-link">
+                                    <h4 class="footer-widget-three__title">Page</h4>
+                                    <ul class="footer-widget-three__services-link-list list-unstyled">
+                                        <li>
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="Product.html">Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+    <div class="footer-widget-three__services">
+
+        <h4 class="footer-widget-three__title">Products</h4>
+
+        <ul class="footer-widget-three__services-link-list list-unstyled">
+            <li>
+                <a href="products.html">Diagnostic Devices</a>
+            </li>
+            <li>
+                <a href="products.html">ICU & Monitoring Equipment</a>
+            </li>
+            <li>
+                <a href="products.html">Surgical Equipment</a>
+            </li>
+            <li>
+                <a href="products.html">Laboratory Analyzers</a>
+            </li>
+            <li>
+                <a href="products.html">Patient Monitoring Systems</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="footer-widget-three__newsletter-box">
+                                   <h4 class="footer-widget-three__title">Stay Connected</h4>
+
+<p class="footer-widget-three__newsletter-text">
+    Stay informed about the latest advancements in medical devices for modern hospitals.
+</p>
+
+<form id="newsletterForm" class="footer-widget-three__newsletter">
+
+    <input type="email" id="newsletterEmail" placeholder="Email address" name="EMAIL">
+
+    <button type="submit" class="thm-btn">
+        Subscribe Now
+        <span class="icon-paper-plane"></span>
+    </button>
+
+    <!-- Error Message -->
+    <div id="newsletterError" class="newsletter-error"></div>
+
+</form>
+
+<script>
+document.getElementById("newsletterForm").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const email = document.getElementById("newsletterEmail").value.trim();
+    const errorDiv = document.getElementById("newsletterError");
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email) {
+
+        showError("Email address is required.");
+
+    } else if (!emailPattern.test(email)) {
+
+        showError("Please enter a valid email address.");
+
+    } else {
+
+        window.location.href = "404.html";
+    }
+
+    function showError(message) {
+        errorDiv.innerText = message;
+        errorDiv.style.opacity = "1";
+
+        setTimeout(() => {
+            errorDiv.style.opacity = "0";
+        }, 3000);
+    }
+
+});
+</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer-three__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="site-footer-three__bottom-inner">
+                                <div class="site-footer-three__copyright">
+                                    <p class="site-footer-three__copyright-text">© <a>Stackly</a>
+                                        2026
+                                        |
+                                        All Rights Reserved</p>
+                                </div>
+                                <div class="site-footer-three__bottom-menu-box">
+                                    <ul class="list-unstyled site-footer-three__bottom-menu">
+                                        <li><a href="404.html">Trems & Condition</a></li>
+                                        <li><a href="404.html">Privacy Policy</a></li>
+                                        <li><a href="404.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer Three End-->
+
+
+
+
+
+    </div><!-- /.page-wrapper -->
+
+<!-- Mobile Nav Wrapper -->
+<div class="mobile-nav__wrapper">
+    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+
+    <div class="mobile-nav__content">
+
+        <!-- Close Button -->
+        <span class="mobile-nav__close mobile-nav__toggler">
+            <i class="fa fa-times"></i>
+        </span>
+
+        <!-- Logo -->
+        <div class="logo-box text-center">
+            <a href="index.html">
+                <img src="assets/images/home1/resources/logo.webp" width="130" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Auto Generated Nav Links -->
+        <div class="mobile-nav__container"></div>
+
+        <!-- Bottom Icons -->
+        <div class="mobile-nav__bottom-icons">
+
+            <!-- Cart -->
+            <a href="cart.html" class="mobile-icon-btn">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+
+            <!-- Login -->
+            <a href="login.html" class="mobile-icon-btn">
+                <i class="fas fa-user"></i>
+            </a>
+
+            <!-- Dark Mode -->
+            <button id="mobileThemeToggle" class="mobile-icon-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+        <span class="scroll-to-top__text"> Go Back Top</span>
+    </a>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.circle-progress.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/wNumb.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery-sidebar-content.js"></script>
+    <script src="assets/js/gsap/gsap.js"></script>
+    <script src="assets/js/gsap/ScrollTrigger.js"></script>
+    <script src="assets/js/gsap/SplitText.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/timePicker.js"></script>
+
+
+
+
+    <!-- template js -->
+    <script src="assets/js/script.js"></script>
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    // Change all moon/sun icons
+    document.querySelectorAll("#themeToggle, #mobileThemeToggle").forEach(btn => {
+        if (document.body.classList.contains("dark-mode")) {
+            btn.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            btn.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
+}
+
+// Normal Header Button
+document.addEventListener("click", function(e){
+    if(e.target.closest("#themeToggle")){
+        toggleDarkMode();
+    }
+});
+
+// Mobile Button
+document.addEventListener("click", function(e){
+    if(e.target.closest("#mobileThemeToggle")){
+        toggleDarkMode();
+    }
+});
+</script>
+
+</body>
+
+</html>
