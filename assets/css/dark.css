@@ -1,0 +1,627 @@
+body,
+body .site-footer__bottom-inner,
+.site-footer__newsletter-inner,
+.services-one__single,
+.main-menu__wrapper-inner {
+    background-color: #011030;
+}
+
+
+.site-footer,
+.contact-one__inner,
+.testimonial-one__single,
+.faq-one__inner,
+.services-one__icon,
+.services-one,
+.brand-one,
+.about-one__working-hour,
+.about-one__content-box {
+    background-color: #04163c;
+}
+
+.stricky-header.main-menu {
+    background-color: #011030;
+}
+
+.banner-one {
+    background: transparent;
+    background-color: #04163c;
+}
+
+.banner-one__call-icon {
+    color: var(--careon-white);
+    border: 1px solid rgba(var(--careon-white-rgb), .20);
+}
+
+.banner-one__find-doctor {
+    background-color: #011030;
+    border: 1px solid rgba(var(--careon-white-rgb), .20);
+}
+
+.site-footer__bottom-menu li a,
+.site-footer__copyright-text,
+.footer-widget__services-link-list li a,
+.footer-widget__contact-text,
+.footer-widget__contact-text a,
+.footer-widget__contact-content span,
+.site-footer__newsletter-input input[type="email"],
+.contact-one__input-box textarea,
+.contact-one__input-box input[type="text"],
+.contact-one__input-box input[type="email"],
+.blog-one__meta li p,
+.testimonial-one__client-info p,
+.testimonial-one__text,
+.testimonial-one__ratting span.icon-star-color,
+.testimonial-one__text-1,
+.faq-one__left .faq-one-accrodion .accrodion-content p,
+.team-one__social a,
+.team-one__sub-title,
+.services-one__text,
+.about-one__working-hour-list li span,
+.about-one__working-hour-list li p,
+.about-one__points-box li p,
+.about-one__text,
+.banner-one__text,
+.banner-one__call-sub-title {
+    color: rgba(var(--careon-white-rgb), .50);
+}
+
+
+.site-footer__copyright-text a:hover,
+.site-footer__bottom-menu li a:hover,
+.footer-widget__services-link-list li a:hover,
+.footer-widget__contact-icon span,
+.footer-widget__title,
+.site-footer__newsletter-title,
+.contact-one__title,
+.blog-one__title a,
+.blog-one__meta li .icon span,
+.testimonial-one__client-info h4 a,
+.testimonial-one__ratting span,
+.faq-one__left .faq-one-accrodion .accrodion-title h4::before,
+.faq-one-accrodion__count:before,
+.faq-one__left .faq-one-accrodion .accrodion-title h4,
+.team-one__title a,
+.services-one__read-more,
+.services-one__icon span,
+.services-one__title a,
+.about-one__working-hour-title,
+.about-one__points-box li .icon span,
+.feature-one__feature-list-sub-title,
+.feature-one__feature-list-icon span,
+.feature-one__feature-list-title a,
+.section-title__title,
+.section-title__tagline span,
+.section-title__tagline,
+.banner-one__title,
+.banner-one__title span,
+.banner-one__call-number a,
+.banner-one__find-doctor-title,
+.banner-one__find-doctor-name h4 a,
+.main-menu .main-menu__list>li>a,
+.stricky-header .main-menu__list>li>a,
+.main-menu .main-menu__list>li.dropdown>a:after {
+    color: var(--careon-white);
+}
+
+
+.main-menu .main-menu__list>li.current>a::after,
+.main-menu .main-menu__list>li:hover>a::after,
+.stricky-header .main-menu__list>li.current>a::after,
+.stricky-header .main-menu__list>li:hover>a::after {
+    color: var(--careon-base);
+}
+
+
+.feature-one__feature-list li:hover .feature-one__feature-list-sub-title,
+.feature-one__feature-list li:hover .feature-one__feature-list-icon span,
+.feature-one__feature-list li:hover .feature-one__feature-list-title a {
+    color: var(--careon-black);
+}
+
+
+
+.blog-one__read-more .thm-btn::before,
+.blog-one__read-more .thm-btn::after {
+    background-color: var(--careon-base);
+}
+
+
+
+.faq-one__left .faq-one-accrodion .accrodion-title h4::before {
+    background-color: var(--careon-black);
+}
+
+
+
+
+
+.site-footer__newsletter-input input[type="email"],
+.team-one__single,
+.feature-one__feature-list li {
+    border: 2px solid rgba(var(--careon-white-rgb), .20);
+}
+
+
+.team-one__single:hover {
+    border: 2px solid var(--careon-base);
+}
+
+
+
+.site-footer__bottom-inner,
+.footer-widget__contact-icon,
+.contact-one__input-box textarea,
+.contact-one__input-box input[type="text"],
+.contact-one__input-box input[type="email"],
+.faq-one__left .faq-one-accrodion .accrodion,
+.team-one__social a,
+.about-one__working-hour-list li,
+.about-one__working-hour {
+    border: 1px solid rgba(var(--careon-white-rgb), .20);
+}
+
+
+
+.services-one__btn-box .thm-btn {
+    border: 1px solid var(--careon-base);
+}
+
+
+
+.main-menu__logo img {
+    height: 60px;     /* adjust as needed */
+    width: auto;
+    object-fit: contain;
+}
+
+.brand-one__img>img {
+    filter: contrast(0.5);
+}
+
+.site-footer__bg-shape {
+    filter: invert(1);
+}
+
+/* ===== Modern Compact Feature Box ===== */
+
+.banner-one__img-box {
+    position: relative;
+}
+
+/* ===== Animated Border Effect ===== */
+
+.banner-one__find-doctor {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 22px 24px;
+    border-radius: 18px;
+    max-width: 280px;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    overflow: hidden;
+}
+
+/* Animated Border Layer */
+.banner-one__find-doctor::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    padding: 2px; /* border thickness */
+    background: linear-gradient(
+        120deg,
+        #00c6ff,
+    var(--careon-base),
+        #00c6ff
+    );
+    background-size: 300% 300%;
+    animation: borderMove 4s linear infinite;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+}
+
+/* Animation */
+@keyframes borderMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 300% 50%;
+    }
+}
+
+
+.banner-one__find-doctor-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--careon-base);
+}
+
+.banner-one__find-doctor-list li {
+    margin-bottom: 10px;
+}
+
+.banner-one__find-doctor-name h4 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+@keyframes floatBox {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+.banner-one__find-doctor:hover {
+    transform: translateY(-5px) scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* ===== Banner Button Style ===== */
+
+.banner-one__call-btn {
+    margin-top: 12px;
+}
+
+.banner-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #0c7c8c;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+    background: #0c1e3c;
+    transform: translateY(-2px);
+}
+.banner-one__call-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.banner-one__call-btn {
+    margin-top: 0;
+}
+
+/* ===== Bigger Medical Icons ===== */
+
+.feature-one__feature-list-icon {
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(135deg, #0c7c8c, var(--careon-base));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(12, 124, 140, 0.3);
+}
+
+.feature-one__feature-list-icon i {
+    font-size: 30px;   /* Increased */
+    color: #ffffff;    /* White icon */
+}
+
+.about-one__points-box .icon i {
+    color: #0c7c8c;
+    font-size: 18px;
+}
+
+.about-one__working-hour-title {
+    color: #0c1e3c;
+}
+
+.team-one__title {
+    color: #ffffff !important;
+}
+
+.services-one__icon {
+    width: 65px;
+    height: 65px;
+    background: #eaf6f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-one__icon i {
+    font-size: 26px;
+    color: #0c7c8c;
+}
+
+/* ===== Shop Card Styling ===== */
+
+/* ===============================
+   SHOP CARD CLEAN VERSION
+================================ */
+
+/* Card */
+.shop-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.shop-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.project-one__img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Content */
+.project-one__content {
+    padding: 20px;
+}
+
+/* Bottom Layout (Price Left / Button Right) */
+.shop-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Price */
+.shop-price {
+        padding: 8px 18px;
+    background: #0c7c8c;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+
+/* Button */
+.shop-btn {
+    padding: 8px 18px;
+    background: #0c7c8c;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+    background: #0c1e3c;
+}
+.faq-one__left .faq-one-accrodion .accrodion-title h4::before {
+    display: none !important;
+}
+
+.faq-toggle-icon {
+    float: right;
+    font-size: 14px;
+    color: #ffffff;
+    background: #0c7c8c;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.accrodion.active .faq-toggle-icon {
+    transform: rotate(180deg);
+    background: #ffffff;
+    color: #0c7c8c;
+}
+
+.footer-widget__logo img {
+    max-width: 180px;   /* Adjust size here */
+    height: auto;
+    display: block;
+}
+
+.footer-widget__services-link-list li a i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+# Page Header
+--------------------------------------------------------------*/
+.page-header {
+    position: relative;
+    padding: 120px 0;
+    background: url("../images/home2/resources/pageheader.webp") center center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.page-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65); /* Dark Overlay */
+    z-index: -1;
+}
+
+.page-header__title {
+    color: #ffffff;
+    font-size: 48px;
+    margin-top: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.thm-breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thm-breadcrumb li {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.thm-breadcrumb li a {
+    color: var(--careon-base);
+    text-decoration: none;
+}
+
+.thm-breadcrumb li span {
+    color: #cccccc;
+}
+
+/* ==============================
+   Mobile Devices (Max 768px)
+================================= */
+@media (max-width: 768px) {
+
+  .page-header {
+        padding: 80px 0;   /* Reduce height */
+        min-height: auto;  /* Prevent fixed height issues */
+    }
+
+    .page-header__title {
+        font-size: 28px; /* Smaller heading */
+        line-height: 1.3;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .thm-breadcrumb {
+        flex-wrap: wrap; /* Allow wrapping */
+        gap: 6px;
+    }
+
+    .thm-breadcrumb li {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .page-header {
+        padding: 40px 0;
+    }
+
+    .page-header__title {
+        font-size: 22px;
+    }
+
+    .thm-breadcrumb li {
+        font-size: 13px;
+    }
+
+}
+
+
+/* ===== MEDICAL SERVICES SECTION ===== */
+
+.medical-services-section {
+    background: #0b1f3a;
+    padding: 20px 0;
+}
+
+.service-subtitle {
+    color: var(--careon-base);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.service-title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+}
+/* Service Card Border Hover Effect */
+.medical-service-card {
+    background: #102a4c;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+
+.medical-service-card:hover {
+    border: 1px solid var(--careon-base);
+    box-shadow: 0 0 20px rgba(0, 195, 255, 0.4);
+    transform: translateY(-6px);
+}
+.medical-service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--careon-base);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-icon i {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.medical-service-card h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.medical-service-card p {
+    color: #cfd8e3;
+    font-size: 15px;
+}
+
+.service-btn {
+    display: inline-block;
+    margin-top: 15px;
+    color:var(--careon-base);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.service-btn:hover {
+    color: #ffffff;
+}
