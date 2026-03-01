@@ -1619,3 +1619,32 @@ if ($(".accrodion-grp").length) {
 
 
 })(jQuery);
+
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    // Change all moon/sun icons
+    document.querySelectorAll("#themeToggle, #mobileThemeToggle").forEach(btn => {
+        if (document.body.classList.contains("dark-mode")) {
+            btn.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            btn.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
+}
+
+// Normal Header Button
+document.addEventListener("click", function(e){
+    if(e.target.closest("#themeToggle")){
+        toggleDarkMode();
+    }
+});
+
+// Mobile Button
+document.addEventListener("click", function(e){
+    if(e.target.closest("#mobileThemeToggle")){
+        toggleDarkMode();
+    }
+});
+
